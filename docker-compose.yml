@@ -2,9 +2,9 @@ version: '3.7'
 
 services:
 
-    service-mongodb:
+    mongodbPest:
         image: mongo
-        container_name: service-mongodb
+        container_name: mongodbPest
         ports: 
           - '27017:27017'
         # restart: always

@@ -1,5 +1,5 @@
 DATABASE_CONFIG = {
-    "DB_HOST": "service-pests",
+    "DB_HOST": "mongodbPest",
     "DB_PORT": 27017,
     "DB_USERNAME": "admin",
     "DB_PASSWORD": "password",
