@@ -54,7 +54,8 @@ class MongoDB():
             collection = self.get_collection()
             res = collection.delete_one({"id": identifier})
             if res.deleted_count == 1:
-                print(f'Praga removida com sucesso {identifier} removida com sucesso')
+                print(f'Praga removida com sucesso {identifier}'
+                      'removida com sucesso')
             else:
                 print(f'Erro ao remover a praga {identifier}:'
                       'nenhuma praga encontrada para o id')
