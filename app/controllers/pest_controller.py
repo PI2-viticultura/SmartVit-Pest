@@ -2,19 +2,19 @@ from models.pest import MongoDB
 
 
 def save_pest_request(request):
-    fields = ['id_vinicola', 'tipo', 'inicio']
+    fields = ['idVineyard', 'type', 'startTime']
 
     if not all(field in request.keys() for field in fields):
         return {
             "erro": "Preencha os campos obrigatórios!"
         }, 400
 
-    if not request["tipo"]:
+    if not request["type"]:
         return {
             "erro": "Informe o tipo de praga!"
         }, 400
 
-    if not request["inicio"]:
+    if not request["startTime"]:
         return {
             "erro": "Informe a data de início da constatação da manifestação!"
         }, 400
