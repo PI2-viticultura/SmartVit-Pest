@@ -25,7 +25,7 @@ class MongoDB():
 
     def get_collection(self):
         db = self.client['smart-dev']
-        collection = db['pragas']
+        collection = db['pest']
         return collection
 
     def insert_one(self, body):
