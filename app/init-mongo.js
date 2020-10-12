@@ -1,4 +1,4 @@
-db = db.getSiblings('smart-dev')
+db = db.getSiblings("smart-dev")
 db.createUser(
     {
         user: "admin",
