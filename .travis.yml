@@ -25,5 +25,6 @@ jobs:
           - flake8
          # - coverage run -m pytest
          # - coverage xml
+         - cd app/ && behave
 # after_success:
   # - python-codacy-coverage -r coverage.xml
