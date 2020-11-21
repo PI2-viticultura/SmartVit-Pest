@@ -72,3 +72,8 @@ class MongoDB():
         collection = self.get_collection()
         document = collection.find_one({"id": identifier})
         return document
+
+    def get_by_winery_id(self, identifier):
+        collection = self.get_collection()
+        document = collection.find_one({"idVineyard": identifier})
+        return document
